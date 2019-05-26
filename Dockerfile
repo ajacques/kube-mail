@@ -8,5 +8,3 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     amavisd-new \
     opendkim opendmarc \
     rsyslog supervisor
-
-ADD /rootfs /

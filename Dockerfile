@@ -7,4 +7,5 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     spamassassin spamc \
     amavisd-new \
     opendkim opendmarc \
-    rsyslog supervisor
+
+  && addgroup -g 1003 -S vemail && adduser -u 1003 -H -h /var/dovecot -S vemail

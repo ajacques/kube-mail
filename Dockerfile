@@ -8,4 +8,4 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     amavisd-new \
     opendkim opendmarc \
 
-  && addgroup -g 1003 -S vemail && adduser -u 1003 -H -h /var/dovecot -S vemail
+  && addgroup --gid 1003 --system vemail && adduser --uid 1003 --home -h /var/dovecot --system vemail

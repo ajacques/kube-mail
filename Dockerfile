@@ -1,4 +1,4 @@
-FROM ubuntu:19.04
+FROM ubuntu:19.10
 
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get update \
@@ -7,5 +7,4 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     spamassassin spamc \
     amavisd-new \
     opendkim opendmarc \
-
   && addgroup --gid 1003 --system vemail && adduser --uid 1003 --home /var/dovecot --system vemail

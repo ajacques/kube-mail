@@ -2,7 +2,7 @@ FROM ubuntu:23.04
 
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get update \
-  && apt-get install --no-install-recommends -qy postfix postfix-mysql postfix-policyd-spf-perl policyd-weight \
+  && apt-get install --no-install-recommends -qy postfix postfix-mysql postfix-policyd-spf-python policyd-weight \
     dovecot-core dovecot-imapd dovecot-lmtpd dovecot-mysql dovecot-pop3d dovecot-sieve libopendbx1-mysql \
     spamassassin spamc \
     amavisd-new \

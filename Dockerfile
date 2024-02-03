@@ -8,5 +8,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     amavisd-new \
     opendkim opendmarc \
     syslog-ng \
+    libswitch-perl libdbi-perl libdbd-mysql-perl \
     ca-certificates \
   && addgroup --gid 1003 --system vemail && adduser --uid 1003 --home /var/dovecot --system vemail

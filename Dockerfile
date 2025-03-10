@@ -6,5 +6,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     dovecot-core dovecot-imapd dovecot-lmtpd dovecot-mysql dovecot-pop3d dovecot-sieve libopendbx1-mysql \
     opendkim \
     syslog-ng \
+    libswitch-perl libdbi-perl libdbd-mysql-perl \
     ca-certificates \
   && addgroup --gid 1003 --system vemail && adduser --uid 1003 --home /var/dovecot --system vemail

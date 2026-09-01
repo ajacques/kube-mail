@@ -4,6 +4,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get update \
   && apt-get install --no-install-recommends -qy postfix postfix-mysql \
     dovecot-core dovecot-imapd dovecot-lmtpd dovecot-mysql dovecot-pop3d dovecot-sieve libopendbx1-mysql \
+    libsasl2-modules \
     opendkim \
     syslog-ng \
     libswitch-perl libdbi-perl libdbd-mysql-perl \
